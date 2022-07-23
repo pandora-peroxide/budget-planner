@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>Budget Planner</title>
+</head>
+<body>
+  <div class="planner">
+    <div class="container card">
+      <div class="title-header">
+        <h1>Budget Planner</h1>
+      </div>
+
+      <div class="content-box">
+        <h4>Your Balance</h4>
+        <h2>£<span id="balance"></span></h2>
+      </div>
+
+      <div class="pl-card card">
+        <div class="box">
+          <h4>INCOME</h4>
+          <h4 class="green-text">£<span id="income-box"></span></h4>
+        </div>
+        <div class="vl"></div>
+        <div class="box">
+          <h4>EXPENSES</h4>
+          <h4 class="red-text">-£<span id="expense-box"></span></h4>
+        </div>
+      </div>
+
+      <div class="content-box">
+        <div class="heading">
+          <h2>Transactions</h2>
+        </div>
+        <div id="transaction-list"></div>
+      </div>
+
+      <div class="content-box">
+        <div class="heading">
+          <h2>Add New Transaction</h2>
+        </div>
+        <form id="add-transaction">
+          <label for="title">Title</label>
+          <input id="title" class="text-box" type="text" name="title" placeholder="Transaction Name">
+          <label for="amount">Amount (- for negative)</label>
+          <input id="amount" class="text-box" type="number" step="0.01" name="amount" placeholder="Amount">
+          <button id="submit-btn" type="submit">Add Transaction</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>

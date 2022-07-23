@@ -1,0 +1,135 @@
+
+body{
+  overflow: scroll;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  padding-top: 5%;
+}
+
+label{
+  margin-bottom:10px;
+}
+
+.border{
+  border: 1px solid red;
+}
+
+.planner{
+  display:flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+
+.container{
+  width: 350px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.title-header{
+  text-align: center;
+}
+
+.content-box{
+  margin-top: 30px;
+}
+
+.pl-card{
+  display: flex;
+  flex-direction: row;
+  width:95%;
+  padding: 10px;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.box{
+  text-align: center;
+  width: 50%;
+}
+
+.vl{
+  background: #C0C0C0;
+  width: 1px;
+}
+
+.heading{
+  border-bottom: 1px solid #C0C0C0;;
+}
+
+.transaction-box{
+  padding: 3px 7px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn{
+  visibility: hidden;
+  background-color: red;
+  width: 25px;
+  height: 60%;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+
+  position: relative;
+  left: -7%;
+  z-index: 1;
+}
+
+.transaction-box:hover .remove-btn{
+  visibility: visible;
+}
+
+.positive-transaction{
+  border-right: 3px solid green;
+}
+
+.negative-transaction{
+  border-right: 3px solid red;
+}
+
+#add-transaction{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.text-box{
+  margin-bottom: 15px;
+}
+
+#submit-btn{
+  width: 50%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #40E0D0;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+#submit-btn:hover{
+  background-color: #2d9d92;
+}
+
+.red-text{
+  color: red;
+}
+
+.green-text{
+  color: green;
+}
